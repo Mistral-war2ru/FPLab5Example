@@ -1,7 +1,16 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import java.lang.System.`in`
+import java.util.*
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun max(x : Int,y : Int,z : Int) : Int{
+    return if (x>y) if (x>z) x else z else if (y>z) y else z
+}
+
+fun main()
+{
+    println("Hello World!")
+    val scanner = Scanner(`in`)
+    val x : Int = scanner.nextInt()
+    val y : Int = scanner.nextInt()
+    val z : Int = scanner.nextInt()
+    println(max(x,y,z))
 }
