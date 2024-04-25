@@ -1,38 +1,41 @@
 import java.lang.System.`in`
 import java.util.*
 
-fun max(x : Int,y : Int,z : Int):Int{
-    return if (x > y) if (x > z) x else z else if (y > z) y else z
-}
+//максимум из 3
+fun max3(x : Int,y : Int,z : Int):Int = if (x > y) if (x > z) x else z else if (y > z) y else z
 
-fun factup(n : Int):Int{
-    return if (n <= 1) 1 else factup(n - 1) * n
-}
+//факториал вверх
+fun factup(n : Int):Int = if (n <= 1) 1 else factup(n - 1) * n
 
-tailrec fun factd(n : Int,a : Int):Int{
-    return if (n <= 1) n * a else factd(n - 1, n * a)
-}
+//факториал вниз
+tailrec fun factd(n : Int,a : Int):Int = if (n <= 1) n * a else factd(n - 1, n * a)
+fun factdown(n : Int):Int = factd(n, 1)
 
-fun factdown(n : Int):Int{
-    return factd(n, 1)
-}
+//сумма цифр вверх
+fun sumc(n : Int):Int = if (n < 10) n else (n % 10)+sumc(n / 10)
 
-fun sumc(n : Int):Int{
-    return if (n < 10) n else (n % 10)+sumc(n / 10)
-}
+//произведение цифр вверх
+fun mulc(n : Int):Int = if (n < 10) n else (n % 10)*mulc(n / 10)
 
-fun mulc(n : Int):Int{
-    return if (n < 10) n else (n % 10)*mulc(n / 10)
-}
+//функция высшего порядка возвращает функцию
+fun calc(f : Boolean): (Int) -> Int = if (f) ::sumc else ::mulc
 
-fun calc(f: Boolean): (Int) -> Int{
-    return if (f) ::sumc else ::mulc
-}
+//функция высшего порядка принимает функцию
+tailrec fun digits(n : Int, a : Int = 0, f : (Int , Int) -> Int):Int = if (n == 0) a else digits(n / 10, f(a, n % 10), f)
+
+//вызовы через лямбды
+fun sumd(n:Int): Int = digits(n,0) { a, b -> (a + b) }
+fun muld(n:Int): Int = digits(n,1) { a, b -> (a * b) }
+fun maxd(n:Int): Int = digits(n/10,n%10) { a, b -> if (a > b) a else b }
+fun mind(n:Int): Int = digits(n/10,n%10) { a, b -> if (a < b) a else b }
 
 fun main()
 {
     println("Hello World!")
     val scanner = Scanner(`in`)
     val x : Int = scanner.nextInt()
-    println(calc(true)(x).toString() + " " + calc(false)(x).toString())
+    println(sumd(x))
+    println(muld(x))
+    println(maxd(x))
+    println(mind(x))
 }
