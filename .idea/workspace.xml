@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07b4de30-e75a-47ec-8f95-88b20a2147f0" name="Changes" comment="high order function">
+    <list default="true" id="07b4de30-e75a-47ec-8f95-88b20a2147f0" name="Changes" comment="high order function + lambda">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714053288107</updated>
-      <workItem from="1714053289441" duration="5900000" />
+      <workItem from="1714053289441" duration="6239000" />
     </task>
     <task id="LOCAL-00001" summary="function max">
       <created>1714054938016</created>
@@ -74,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714057177923</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="high order function + lambda">
+      <created>1714059258312</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714059258312</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +102,7 @@
     <MESSAGE value="function max" />
     <MESSAGE value="factorials" />
     <MESSAGE value="high order function" />
-    <option name="LAST_COMMIT_MESSAGE" value="high order function" />
+    <MESSAGE value="high order function + lambda" />
+    <option name="LAST_COMMIT_MESSAGE" value="high order function + lambda" />
   </component>
 </project>

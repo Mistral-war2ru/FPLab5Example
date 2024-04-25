@@ -11,6 +11,10 @@ fun factup(n : Int):Int = if (n <= 1) 1 else factup(n - 1) * n
 tailrec fun factd(n : Int,a : Int):Int = if (n <= 1) n * a else factd(n - 1, n * a)
 fun factdown(n : Int):Int = factd(n, 1)
 
+//сумма цифр вниз
+fun sumcda(n : Int,a : Int):Int = if (n<10) n+a else sumcda(n / 10,a + (n % 10))
+fun sumcd(n : Int):Int = sumcda(n, 0)
+
 //сумма цифр вверх
 fun sumc(n : Int):Int = if (n < 10) n else (n % 10)+sumc(n / 10)
 
@@ -34,8 +38,5 @@ fun main()
     println("Hello World!")
     val scanner = Scanner(`in`)
     val x : Int = scanner.nextInt()
-    println(sumd(x))
-    println(muld(x))
-    println(maxd(x))
-    println(mind(x))
+    println(sumcd(x))
 }
