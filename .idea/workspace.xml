@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07b4de30-e75a-47ec-8f95-88b20a2147f0" name="Changes" comment="function max">
+    <list default="true" id="07b4de30-e75a-47ec-8f95-88b20a2147f0" name="Changes" comment="factorials">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714053288107</updated>
-      <workItem from="1714053289441" duration="2705000" />
+      <workItem from="1714053289441" duration="3813000" />
     </task>
     <task id="LOCAL-00001" summary="function max">
       <created>1714054938016</created>
@@ -60,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714054938017</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="factorials">
+      <created>1714056065471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714056065471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="function max" />
-    <option name="LAST_COMMIT_MESSAGE" value="function max" />
+    <MESSAGE value="factorials" />
+    <option name="LAST_COMMIT_MESSAGE" value="factorials" />
   </component>
 </project>
