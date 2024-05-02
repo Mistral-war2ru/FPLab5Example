@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07b4de30-e75a-47ec-8f95-88b20a2147f0" name="Changes" comment="unit test">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main2.kt" afterDir="false" />
+    <list default="true" id="07b4de30-e75a-47ec-8f95-88b20a2147f0" name="Changes" comment="Lab6 input list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714053288107</updated>
       <workItem from="1714053289441" duration="8024000" />
-      <workItem from="1714666632343" duration="2527000" />
+      <workItem from="1714666632343" duration="4104000" />
     </task>
     <task id="LOCAL-00001" summary="function max">
       <created>1714054938016</created>
@@ -145,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714061187664</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lab6 input list">
+      <created>1714669245711</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714669245711</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +176,7 @@
     <MESSAGE value="high order function + lambda" />
     <MESSAGE value="sum numbers down" />
     <MESSAGE value="unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="unit test" />
+    <MESSAGE value="Lab6 input list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab6 input list" />
   </component>
 </project>
