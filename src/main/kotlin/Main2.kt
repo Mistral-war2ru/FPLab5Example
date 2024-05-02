@@ -1,3 +1,4 @@
+import java.lang.Math.abs
 import java.lang.System.`in`
 import java.util.*
 
@@ -49,11 +50,21 @@ fun new2freq(m: MutableList<Int>): MutableList<Int>
     } else return mutableListOf()
 }
 
+fun newlist(m: MutableList<Int>): MutableList<Int>
+{
+    if (m.isNotEmpty()) {
+        val n:MutableList<Int> = mutableListOf()
+        val map: MutableMap<Int, Int> = mutableMapOf<Int, Int>()
+        for (x in m) if ((x < 0) and (Main().sumc(abs(x)) < 10)) n.add(x)
+        return n
+    } else return mutableListOf()
+}
+
 fun main() {
     println("Hello World!")
     val scanner = Scanner(`in`)
     val n: Int = scanner.nextInt()
     val m = vvod(n)
     println(m)
-    println(new2freq(m))
+    println(newlist(m))
 }
