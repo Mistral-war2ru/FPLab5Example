@@ -38,11 +38,22 @@ fun freq(m: MutableList<Int>): Int
     } else return 0
 }
 
+fun new2freq(m: MutableList<Int>): MutableList<Int>
+{
+    if (m.isNotEmpty()) {
+        val n:MutableList<Int> = mutableListOf()
+        val map: MutableMap<Int, Int> = mutableMapOf<Int, Int>()
+        for (x in m) map[x] = map.getOrDefault(x, 0) + 1
+        for (x in map) if ((x.key % 2 == 0) and (x.value % 2 == 0)) n.add(x.key)
+        return n
+    } else return mutableListOf()
+}
+
 fun main() {
     println("Hello World!")
     val scanner = Scanner(`in`)
     val n: Int = scanner.nextInt()
     val m = vvod(n)
     println(m)
-    println(freq(m))
+    println(new2freq(m))
 }
