@@ -1,6 +1,7 @@
 import java.lang.Math.abs
 import java.lang.System.`in`
 import java.util.*
+import kotlin.collections.HashSet
 
 val scanner = Scanner(`in`)
 
@@ -60,10 +61,24 @@ fun newlist(m: MutableList<Int>): MutableList<Int>
 }
 
 fun main() {
-    println("Hello World!")
-    val scanner = Scanner(`in`)
-    val n: Int = scanner.nextInt()
-    val m = vvod(n)
-    println(m)
-    println(newlist(m))
+    val m: MutableList<User> = mutableListOf()
+    val u1=User("Фам","Им","От","@a",Date(1999,7,2))
+    val u2=User("Иванов","Иван","Иванович","@ivan",Date(1964,2,12))
+    val u3=User("Василий","Пупкин","","@lesnik",Date(1988,10,30))
+    val u4=User("Иванов","Иван","Иванович","@ivan",Date(1964,2,12))
+    m.add(u1)
+    m.add(u2)
+    m.add(u3)
+    m.add(u4)
+    for (x in m)x.write()
+    println("-------------------------------------------------------------------------------")
+    m.sort()
+    for (x in m)x.write()
+    println("-------------------------------------------------------------------------------")
+    val h: HashSet<User> = hashSetOf()
+    h.add(u1)
+    h.add(u2)
+    h.add(u3)
+    h.add(u4)
+    for (x in h)x.write()
 }
