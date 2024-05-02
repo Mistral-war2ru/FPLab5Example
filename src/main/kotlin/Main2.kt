@@ -27,9 +27,9 @@ fun mind(m: MutableList<Int>): Int = arrayOP(m, m.size, m[0]) { a, b -> if (a < 
 fun freq(m: MutableList<Int>): Int
 {
     if (m.isNotEmpty()) {
-        val map: MutableMap<Int, Int> = mutableMapOf<Int, Int>()
+        val map: MutableMap<Int, Int> = mutableMapOf()
         for (x in m) map[x] = map.getOrDefault(x, 0) + 1
-        var k: Int = 1
+        var k = 1
         var e: Int = map.values.first()
         for (x in map) if (x.value > k) {
             k = x.value
@@ -43,7 +43,7 @@ fun new2freq(m: MutableList<Int>): MutableList<Int>
 {
     if (m.isNotEmpty()) {
         val n:MutableList<Int> = mutableListOf()
-        val map: MutableMap<Int, Int> = mutableMapOf<Int, Int>()
+        val map: MutableMap<Int, Int> = mutableMapOf()
         for (x in m) map[x] = map.getOrDefault(x, 0) + 1
         for (x in map) if ((x.key % 2 == 0) and (x.value % 2 == 0)) n.add(x.key)
         return n
@@ -54,7 +54,6 @@ fun newlist(m: MutableList<Int>): MutableList<Int>
 {
     if (m.isNotEmpty()) {
         val n:MutableList<Int> = mutableListOf()
-        val map: MutableMap<Int, Int> = mutableMapOf<Int, Int>()
         for (x in m) if ((x < 0) and (Main().sumc(abs(x)) < 10)) n.add(x)
         return n
     } else return mutableListOf()
